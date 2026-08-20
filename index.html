@@ -20,6 +20,7 @@
         <a href="#palestras">Palestras</a>
         <a href="#programacao">Programação</a>
         <a href="#inscricao">Inscrição</a>
+        <a href="login.html">Login</a>
     </nav>
 
     <main>
@@ -138,24 +139,42 @@
                 Preencha os dados abaixo para realizar sua inscrição.
             </p>
             <form>
-                <p>
-                    <label for="nome">Nome:</label>
-                    <input type="text" id="nome" name="nome" required>
-                </p>
-                <p>
-                    <label for="email">E-mail:</label>
-                    <input type="email" id="email" name="email" required>
-                </p>
-                <p>
-                    <label for="senha">Crie uma senha:</label>
-                    <input type="password" id="senha" name="senha" required>
-                </p>
-                <p>
-                    <input type="checkbox" id="novidades" name="novidades">
-                    <label for="novidades">
-                        Desejo receber novidades sobre o evento
-                    </label>
-                </p>
+                <fieldset>
+                    <legend>Dados pessoais</legend>
+                    <p>
+                        <label for="nome">Nome:</label>
+                        <input type="text" id="nome" name="nome" required>
+                    </p>
+                    <p>
+                        <label for="email">E-mail:</label>
+                        <input type="email" id="email" name="email" required>
+                    </p>
+                    <p>
+                        <label for="senha">Crie uma senha:</label>
+                        <input type="password" id="senha" name="senha" required>
+                    </p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Preferências</legend>
+                    <p>
+                        <label for="trilha">Trilha preferida:</label>
+                        <select id="trilha" name="trilha">
+                            <option value="" selected disabled>Selecione uma opção</option>
+                            <option value="front-end">Desenvolvimento Front-end</option>
+                            <option value="ux">UX e Interfaces</option>
+                            <option value="web">Tecnologias Web</option>
+                        </select>
+                    </p>
+
+                    <p>
+                        <input type="checkbox" id="novidades" name="novidades">
+                        <label for="novidades">
+                            Desejo receber novidades sobre o evento
+                        </label>
+                    </p>
+                </fieldset>
+
                 <button type="submit">
                     Realizar inscrição
                 </button>
